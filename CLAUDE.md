@@ -20,6 +20,24 @@ python -m http.server 8080
 
 **Repository:** https://github.com/tom-carlsen/tom-carlsen-portfolio
 
+## Git workflow
+
+After completing any piece of work, commit and push immediately so no progress is ever lost. Commits should be scoped to a single concern — don't bundle unrelated changes.
+
+```bash
+git add <files>
+git commit -m "type: short description"
+git push
+```
+
+Commit message types: `feat` (new content or feature), `fix` (bug or visual correction), `style` (CSS-only change), `refactor` (restructuring without behaviour change), `docs` (CLAUDE.md or comments), `chore` (assets, config).
+
+Examples of clean messages:
+- `feat: add favicon and link in head`
+- `fix: correct mobile layout for stories duo grid`
+- `style: increase hero name font size on large screens`
+- `docs: update resume PDF in assets`
+
 ## Architecture
 
 Three files, no interdependencies beyond the HTML loading the other two:
